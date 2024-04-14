@@ -103,8 +103,10 @@ func spaTemplateHandler(tmpl *template.Template, basePath string) http.Handler {
 		}
 	})
 }
-
+/*
 // basicAuthMiddleware
+// https://github.com/a-schild/inbucket/pull/1/files
+
 func basicAuthMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
 		if len(rootConfig.Web.AuthHeader) > 0 {
@@ -117,3 +119,4 @@ func basicAuthMiddleware(h http.Handler) http.Handler {
 		h.ServeHTTP(w, req)
 	})
 }
+*/
