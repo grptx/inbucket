@@ -47,7 +47,7 @@ update msg model =
 
 view : Model -> { title : String, modal : Maybe (Html msg), content : List (Html Msg) }
 view model =
-    { title = "Inbucket"
+    { title = "Cacata"
     , modal = Nothing
     , content =
         [ Html.node "rendered-html"

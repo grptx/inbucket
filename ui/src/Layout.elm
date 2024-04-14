@@ -180,7 +180,7 @@ frame { model, session, activePage, activeMailbox, modal, content } =
                 [ button [ class "navbar-toggle", Events.onClick (MainMenuToggled |> model.mapMsg) ]
                     [ i [ class "fas fa-bars" ] [] ]
                 , span [ class "navbar-brand" ]
-                    [ a [ href <| session.router.toPath Route.Home ] [ text "@ inbucket" ] ]
+                    [ a [ href <| session.router.toPath Route.Home ] [ text "@ Cacata" ] ]
                 , ul [ class "main-nav", classList [ ( "active", model.mainMenuVisible ) ] ]
                     [ if session.config.monitorVisible then
                         navbarLink Monitor (session.router.toPath Route.Monitor) [ text "Monitor" ] activePage
