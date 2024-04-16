@@ -43,6 +43,8 @@ ENV INBUCKET_STORAGE_TYPE file
 ENV INBUCKET_STORAGE_PARAMS path:/storage
 ENV INBUCKET_STORAGE_RETENTIONPERIOD 72h
 ENV INBUCKET_STORAGE_MAILBOXMSGCAP 300
+ENV INBUCKET_SMTP_DOMAIN: "cacata.it"
+ENV INBUCKET_WEB_MONITORVISIBLE: "false"
 
 # Healthcheck
 HEALTHCHECK --interval=5s --timeout=5s --retries=3 CMD /bin/sh -c 'wget localhost:$(echo ${INBUCKET_WEB_ADDR:-0.0.0.0:9000}|cut -d: -f2) -q -O - >/dev/null'
